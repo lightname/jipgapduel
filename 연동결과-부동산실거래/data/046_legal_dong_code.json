@@ -1,0 +1,9 @@
+{
+  "excel_row": 47,
+  "api_id": 46,
+  "title": "[연관] 행정안전부_행정표준코드_법정동코드",
+  "status": "AUTH_OR_KEY_ERROR",
+  "http_status": 403,
+  "message": "HTTP 403 (https://apis.data.go.kr/1741000/StanReginCd/getStanReginCdList)",
+  "payload": "{\n  \"OpenAPI_ServiceResponse\": {\n    \"cmmMsgHeader\": {\n      \"errMsg\": \"SERVICE_KEY_IS_NOT_REGISTERED_ERROR\",\n      \"returnAuthMsg\": \"등록되지 않은 서비스키\",\n      \"returnReasonCode\": \"30\"\n    }\n  }\n}\n"
+}
