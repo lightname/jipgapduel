@@ -27,3 +27,4 @@ export {
 export { RevealPanel, type RevealPanelProps } from './view/RevealPanel';
 export { ResultView, type ResultViewProps } from './view/ResultView';
 export { DailyGame, type DailyGameProps } from './view/DailyGame';
+export { InfiniteGame, type InfiniteGameProps } from './view/InfiniteGame';
