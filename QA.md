@@ -47,6 +47,13 @@
 | Q-20 | 버그 | 키 노출 | secrets에 임의 문자열 입력 후 그 값을 `src/`에서 import하는 코드 추가 시도 | lint 실패, 빌드 시 check-secrets FAIL | CORE C-26, CONVENTIONS 레이어 규칙 |
 
 ## §2 코딩 후 추가 항목
+| ID | 분야 | 대상 | 확인 방법 | 기대 결과 | 근거 문서·절 |
+|---|---|---|---|---|---|
+| Q-21 | 버그 | 헤더 `#header-status` 포털 | `/daily`·`/infinite` 진입 및 홈 왕복 이동 | 헤더 우측에 데일리 회차·진행률 및 연속·최고 기록이 중복이나 잔상 없이 표시되고, 홈으로 이동하면 비워짐 | PROGRESS 가정 T-01, DESIGN §4.0 |
+| Q-22 | 버그 | 데일리 미완료 이어하기 | `/daily`에서 3문제 풀이 후 새로고침 | 같은 `poolVersion`이면 4/10부터 이어서 시작하고 진행 막대 1~3칸 색이 저장 답안과 일치 | CORE C-16, T-11 |
+| Q-23 | CTA | 가이드 모바일 재노출 바 | 375px `/guide/data-source`에서 800px 이상 스크롤 | 본문 CTA 블록이 화면 밖일 때만 하단 고정 바 표시, 본문 CTA가 뷰포트에 들어오면 숨김 | DESIGN §6 S-06, T-14 |
+| Q-24 | 성장 | OG·아이콘 파일·404 응답 | `out/og/*.png` 5종·`out/favicon.ico`·`out/icon.svg` 존재 및 `/no-such-page`·`/en` 요청 확인 | 모든 이미지·아이콘 파일 존재, 두 미존재 경로 모두 404 및 noindex | DESIGN §2, T-17, T-18 |
+| Q-25 | 버그 | 샘플→실데이터 전환 | 출시 전 `main`에서 `npm run update` 실행 후 `stats.json`·`pool.json` 확인 | 5개 구 샘플에서 수도권 전체(≥5,000건·커버리지 ≥90%)로 갱신되고 검증 통과 | SPEC R-12, CORE C-23 |
 
 ## §3 1차 QA 결과
 
