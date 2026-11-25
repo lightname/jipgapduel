@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-25T15:27:02.622Z",
+  "poolVersion": "20261126-0027",
+  "period": {
+    "from": "2026-10",
+    "to": "2026-10"
+  },
+  "sggCount": 5,
+  "counts": {
+    "fetched": 412,
+    "afterCancel": 406,
+    "afterDirect": 395,
+    "afterNonIndividual": 390,
+    "afterLeasehold": 388,
+    "afterOutlier": 388,
+    "poolTrades": 369
+  },
+  "pairBands": {
+    "easy": {
+      "count": 300,
+      "minPct": 0.3,
+      "maxPct": null
+    },
+    "medium": {
+      "count": 300,
+      "minPct": 0.1,
+      "maxPct": 0.3
+    },
+    "hard": {
+      "count": 300,
+      "minPct": 0.02,
+      "maxPct": 0.1
+    }
+  },
+  "bySgg": [
+    {
+      "code": "11440",
+      "name": "서울 마포구",
+      "median": 144500,
+      "count": 93
+    },
+    {
+      "code": "11650",
+      "name": "서울 서초구",
+      "median": 225000,
+      "count": 85
+    },
+    {
+      "code": "11680",
+      "name": "서울 강남구",
+      "median": 315000,
+      "count": 93
+    },
+    {
+      "code": "11710",
+      "name": "서울 송파구",
+      "median": 222000,
+      "count": 98
+    }
+  ],
+  "byArea": [
+    {
+      "band": "60㎡ 이하",
+      "median": 129750,
+      "count": 138
+    },
+    {
+      "band": "60~85㎡",
+      "median": 233000,
+      "count": 169
+    },
+    {
+      "band": "85~102㎡",
+      "median": 358500,
+      "count": 16
+    },
+    {
+      "band": "102~135㎡",
+      "median": 263000,
+      "count": 41
+    },
+    {
+      "band": "135㎡ 초과",
+      "median": 330000,
+      "count": 24
+    }
+  ],
+  "byAge": [
+    {
+      "band": "5년 이내",
+      "median": 240000,
+      "count": 23
+    },
+    {
+      "band": "6~10년",
+      "median": 258500,
+      "count": 38
+    },
+    {
+      "band": "11~20년",
+      "median": 222750,
+      "count": 106
+    },
+    {
+      "band": "21~30년",
+      "median": 138500,
+      "count": 114
+    },
+    {
+      "band": "30년 초과",
+      "median": 269000,
+      "count": 107
+    }
+  ]
+}
