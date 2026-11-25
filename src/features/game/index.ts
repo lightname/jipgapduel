@@ -19,3 +19,8 @@ export {
   type Phase,
 } from './logic/reducer';
 export { loadPool, resetPoolCache, type PoolErrorCode, type PoolResult } from './logic/load-pool';
+export {
+  QuestionCard,
+  type QuestionCardProps,
+  type QuestionCardState,
+} from './view/QuestionCard';

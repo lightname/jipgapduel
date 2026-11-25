@@ -28,6 +28,14 @@
     "ad": {
       "label": "광고"
     },
+    "card": {
+      "floor": "{floor}층",
+      "buildYear": "{year}년 준공",
+      "dealYm": "{ym} 거래",
+      "hiddenPrice": "?",
+      "correctBadge": "정답",
+      "ariaLabel": "{name}, {region}, 전용 {areaM2}㎡, {floor}층, {year}년 준공, {ym} 거래 선택"
+    },
     "error": {
       "POOL_FETCH_FAILED": "문제를 불러오지 못했어요",
       "POOL_SCHEMA_MISMATCH": "문제를 불러오지 못했어요",
