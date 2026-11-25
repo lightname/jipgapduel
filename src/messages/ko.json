@@ -75,6 +75,43 @@
       "result": "결과 보기"
     }
   },
+  "s05": {
+    "daily": {
+      "title": "오늘의 결과",
+      "meta": "{date} · 데일리 #{no}",
+      "score": "10문제 중 {score}개",
+      "maxStreak": "최고 연속 {maxStreak}개",
+      "message": "오늘의 10문제, 모두가 같은 문제를 풀어요",
+      "revisit": "내일 0시에 새 10문제"
+    },
+    "infinite": {
+      "title": "이번 기록",
+      "score": "연속 {score}개 정답",
+      "best": "최고 기록 {best}개",
+      "newBest": "최고 기록 경신"
+    },
+    "grid": {
+      "ariaLabel": "{correct}개 정답, {wrong}개 오답"
+    },
+    "share": {
+      "noPriceNotice": "가격은 공유되지 않아요",
+      "ctaDaily": "결과 공유하기",
+      "ctaInfinite": "기록 공유하기",
+      "copy": "텍스트 복사하기",
+      "download": "이미지 저장하기",
+      "copied": "복사했어요",
+      "imageError": "이미지를 만들지 못해 텍스트만 공유했어요",
+      "textDaily": "집값대결 데일리 #{no}\n10문제 중 {score}개 · 최고 연속 {maxStreak}\n{grid}\n{url}",
+      "textInfinite": "집값대결 무한 모드\n연속 {streak}개 정답 · 최고 기록 {best}\n{grid}\n{url}"
+    },
+    "cta": {
+      "toInfinite": "무한 모드로 더 풀기",
+      "replay": "다시 도전하기"
+    },
+    "link": {
+      "medianPrice": "조건별 중간 가격 보기"
+    }
+  },
   "s08": {
     "title": "페이지를 찾을 수 없어요"
   }
