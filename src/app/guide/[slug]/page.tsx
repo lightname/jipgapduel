@@ -95,7 +95,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       <JsonLd data={breadcrumbLd} />
       {datasetLd ? <JsonLd data={datasetLd} /> : null}
 
-      <nav aria-label="breadcrumb" className="type-small flex items-center gap-[var(--space-2)] text-text-muted">
+      <nav aria-label={t('s06.breadcrumb.ariaLabel')} className="type-small flex items-center gap-[var(--space-2)] text-text-muted">
         <Link href="/" className="hover:text-primary hover:underline">
           {t('s06.breadcrumb.home')}
         </Link>
