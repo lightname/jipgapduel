@@ -7,6 +7,7 @@ export default defineConfig([
   ...nextTs,
   globalIgnores([
     '.next/**',
+    '.wrangler/**',
     'out/**',
     'node_modules/**',
     'qa/**',
