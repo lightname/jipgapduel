@@ -184,6 +184,62 @@
       "medianPrice": "조건별 중간 가격 보기"
     }
   },
+  "s06": {
+    "breadcrumb": {
+      "home": "홈",
+      "sep": "›"
+    },
+    "meta": {
+      "updated": "· 글 수정 {date}"
+    },
+    "cta": {
+      "primaryTitle": "둘 중 더 비싼 집은?",
+      "primaryBtn": "오늘의 10문제 풀기",
+      "primaryHint": "가입 없이 바로 시작해요",
+      "secondaryTitle": "틀릴 때까지 풀어 보세요",
+      "secondaryBtn": "무한 모드 하기"
+    },
+    "related": {
+      "title": "관련 글"
+    },
+    "dataset": {
+      "creator": "국토교통부"
+    }
+  },
+  "table": {
+    "caption": "출처 국토교통부 아파트 매매 실거래 자료 · 기간 {period} · 필터 통과 거래 기준",
+    "bySggWarning": "거래 30건 미만 시군구는 표에서 뺐어요",
+    "funnel": {
+      "colStep": "단계",
+      "colRemain": "남은 거래",
+      "colExcluded": "제외된 거래",
+      "none": "-",
+      "fetched": "전체 수집",
+      "afterCancel": "해제 거래 제외",
+      "afterDirect": "직거래 제외",
+      "afterNonIndividual": "개인 외 거래 제외",
+      "afterLeasehold": "토지임대부 제외",
+      "afterOutlier": "이상치 제외",
+      "poolTrades": "출제 풀"
+    },
+    "bands": {
+      "colBand": "난이도",
+      "colRange": "가격 차이 범위",
+      "colPairs": "문제 쌍 수",
+      "easy": "쉬움",
+      "medium": "보통",
+      "hard": "어려움",
+      "rangeOpen": "{min}% 이상",
+      "range": "{min}% 이상 {max}% 미만"
+    },
+    "median": {
+      "colSgg": "시군구",
+      "colArea": "전용면적",
+      "colAge": "연식(거래 시점)",
+      "colPrice": "중간 가격",
+      "colCount": "거래 수"
+    }
+  },
   "s08": {
     "title": "페이지를 찾을 수 없어요"
   }
