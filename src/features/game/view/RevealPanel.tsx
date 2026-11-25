@@ -26,9 +26,26 @@ export function RevealPanel({
   onNext,
 }: RevealPanelProps) {
   const btnRef = useRef<HTMLButtonElement>(null);
+  const sourceRef = useRef<HTMLDivElement>(null);
+  const barRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     btnRef.current?.focus();
+
+    const barEl = barRef.current;
+    const sourceEl = sourceRef.current;
+    if (!barEl || !sourceEl || typeof window === 'undefined') return;
+    if (window.getComputedStyle(barEl).position !== 'fixed') return;
+
+    const barHeight = barEl.offsetHeight;
+    if (barHeight <= 0) return;
+
+    const barTop = window.innerHeight - barHeight;
+    const sourceBottom = sourceEl.getBoundingClientRect().bottom;
+    const overlap = sourceBottom + 12 - barTop;
+    if (overlap > 0) {
+      window.scrollBy({ top: overlap, behavior: 'auto' });
+    }
   }, []);
 
   const labelKey = isFinal ? 's04.cta.result' : 's04.cta.next';
@@ -61,11 +78,14 @@ export function RevealPanel({
         </div>
       </div>
 
-      <div className="mt-[var(--space-3)]">
+      <div ref={sourceRef} className="mt-[var(--space-3)]">
         <DataSource variant="reveal" linkable={dataSourceLinkable} from="S-04" />
       </div>
 
-      <div className="bar-slide-up fixed inset-x-0 bottom-0 z-20 bg-surface px-[var(--space-5)] pt-[var(--space-3)] pb-[calc(var(--space-3)+env(safe-area-inset-bottom))] shadow-[var(--shadow-bar)] md:static md:mt-[var(--space-6)] md:animate-none md:bg-transparent md:p-0 md:text-center md:shadow-none">
+      <div
+        ref={barRef}
+        className="bar-slide-up fixed inset-x-0 bottom-0 z-20 bg-surface px-[var(--space-5)] pt-[var(--space-3)] pb-[calc(var(--space-3)+env(safe-area-inset-bottom))] shadow-[var(--shadow-bar)] md:static md:mt-[var(--space-6)] md:animate-none md:bg-transparent md:p-0 md:text-center md:shadow-none"
+      >
         <Button ref={btnRef} variant="primary" onClick={handleNext} className="w-full md:w-[320px]">
           {buttonLabel}
         </Button>

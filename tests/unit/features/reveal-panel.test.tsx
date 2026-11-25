@@ -47,4 +47,50 @@ describe('RevealPanel (T-09, S-04)', () => {
     expect(getByRole('button', { name: '결과 보기' })).toBeTruthy();
     expect(queryByText('데이터 기준 보기')).toBeNull();
   });
+
+  it('scrolls down on mobile when fixed bottom bar overlaps verdict/source rows', () => {
+    const scrollBySpy = vi.spyOn(window, 'scrollBy').mockImplementation(() => {});
+    const computedSpy = vi
+      .spyOn(window, 'getComputedStyle')
+      .mockReturnValue({ position: 'fixed' } as CSSStyleDeclaration);
+    const origInnerHeight = window.innerHeight;
+    Object.defineProperty(window, 'innerHeight', { configurable: true, value: 667 });
+    const origOffsetHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'offsetHeight');
+    Object.defineProperty(HTMLElement.prototype, 'offsetHeight', { configurable: true, value: 80 });
+    const rectSpy = vi.spyOn(HTMLElement.prototype, 'getBoundingClientRect').mockReturnValue({
+      bottom: 664,
+      top: 644,
+      left: 0,
+      right: 375,
+      width: 375,
+      height: 20,
+      x: 0,
+      y: 644,
+      toJSON: () => ({}),
+    });
+
+    try {
+      render(
+        <RevealPanel
+          correct={false}
+          leftPrice={100000}
+          rightPrice={130000}
+          isFinal={false}
+          dataSourceLinkable={false}
+          onNext={vi.fn()}
+        />,
+      );
+      expect(scrollBySpy).toHaveBeenCalledWith({ top: 89, behavior: 'auto' });
+    } finally {
+      rectSpy.mockRestore();
+      computedSpy.mockRestore();
+      scrollBySpy.mockRestore();
+      Object.defineProperty(window, 'innerHeight', { configurable: true, value: origInnerHeight });
+      if (origOffsetHeight) {
+        Object.defineProperty(HTMLElement.prototype, 'offsetHeight', origOffsetHeight);
+      } else {
+        delete (HTMLElement.prototype as { offsetHeight?: number }).offsetHeight;
+      }
+    }
+  });
 });
