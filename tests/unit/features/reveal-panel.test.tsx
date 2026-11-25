@@ -6,6 +6,7 @@ describe('RevealPanel (T-09, S-04)', () => {
   afterEach(() => cleanup());
 
   it('renders correct verdict with IMG-09 and formatted price diff', () => {
+    const focusSpy = vi.spyOn(HTMLElement.prototype, 'focus');
     const onNext = vi.fn();
     const { container, getByText, getByRole } = render(
       <RevealPanel
@@ -26,6 +27,8 @@ describe('RevealPanel (T-09, S-04)', () => {
 
     const btn = getByRole('button', { name: '다음 문제' });
     expect(document.activeElement).toBe(btn);
+    expect(focusSpy).toHaveBeenCalledWith({ preventScroll: true });
+    focusSpy.mockRestore();
     fireEvent.click(btn);
     expect(onNext).toHaveBeenCalledTimes(1);
   });

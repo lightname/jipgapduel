@@ -30,7 +30,7 @@ export function RevealPanel({
   const barRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    btnRef.current?.focus();
+    btnRef.current?.focus({ preventScroll: true });
 
     const barEl = barRef.current;
     const sourceEl = sourceRef.current;
