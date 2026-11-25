@@ -61,7 +61,32 @@
   },
   "s01": {
     "hero": {
-      "title": "둘 중 더 비싼 집은?"
+      "title": "둘 중 더 비싼 집은?",
+      "sub": "실제 거래된 아파트 두 채, 비싼 쪽을 골라요",
+      "message": "오늘의 10문제, 모두가 같은 문제를 풀어요",
+      "ctaPrimary": "오늘의 10문제 풀기",
+      "ctaSecondary": "무한 모드 하기",
+      "noSignup": "가입 없이 바로 시작해요",
+      "doneBadge": "오늘 완료 · {score}/10"
+    },
+    "how": {
+      "title": "이렇게 풀어요",
+      "step1Title": "카드 두 장 중 하나를 눌러요",
+      "step1Body": "숫자는 입력하지 않아요",
+      "step2Title": "바로 두 가격과 차이가 나와요",
+      "step2Body": "틀려도 이유를 바로 알 수 있어요",
+      "step3Title": "데일리는 10문제, 무한은 틀릴 때까지",
+      "step3Body": "최고 기록은 이 브라우저에 저장돼요"
+    },
+    "data": {
+      "title": "이 게임의 데이터",
+      "periodLabel": "거래 기간",
+      "periodValue": "{from} ~ {to}",
+      "tradesLabel": "출제 거래",
+      "tradesValue": "{count}건",
+      "regionLabel": "지역",
+      "regionValue": "수도권 {count}개 시군구",
+      "updatedLabel": "데이터 갱신"
     }
   },
   "s02": {
@@ -98,6 +123,10 @@
     }
   },
   "meta": {
+    "s01": {
+      "title": "집값대결 — 둘 중 더 비싼 집 고르기",
+      "description": "실제 거래된 수도권 아파트 두 채 중 더 비싼 쪽을 고르는 게임. 숫자 입력 없이 탭 한 번으로 고르고 바로 실거래가와 차이를 확인해요."
+    },
     "s02": {
       "title": "오늘의 집값 퀴즈 10문제 | 집값대결",
       "description": "매일 모두가 같은 10문제를 풀어요. 수도권 아파트 실거래 두 건 중 더 비싼 쪽을 고르고 결과를 가격 없이 공유해요."
