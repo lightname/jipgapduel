@@ -62,7 +62,7 @@ export function QuestionCard({
       className={`relative flex h-full w-full flex-col justify-between gap-[var(--space-2)] rounded-[var(--radius-lg)] bg-surface p-[var(--space-3)] text-left shadow-[var(--shadow-card)] transition-[transform,box-shadow,border-color] duration-[var(--duration-fast)] focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-[var(--color-focus)] md:p-[var(--space-4)] xl:p-[var(--space-6)] ${STATE_CLASS[state]}`}
     >
       {revealed && isHigher ? (
-        <span className="absolute top-[var(--space-2)] right-[var(--space-2)] rounded-[var(--radius-sm)] bg-success px-[var(--space-2)] py-[var(--space-1)] text-[13px] leading-[20px] font-bold text-white">
+        <span className="type-small absolute top-[var(--space-2)] right-[var(--space-2)] rounded-[var(--radius-sm)] bg-success px-[var(--space-2)] py-[var(--space-1)] font-bold text-white">
           {t('common.card.correctBadge')}
         </span>
       ) : null}
@@ -73,7 +73,7 @@ export function QuestionCard({
           <p className="type-small mt-[var(--space-1)] text-text-muted">{region}</p>
         </div>
 
-        <ul className="flex flex-col text-[14px] leading-[20px] text-text md:text-[16px] md:leading-[26px]">
+        <ul className="type-card-info flex flex-col text-text">
           <li>{formatArea(trade.areaM2)}</li>
           <li>{t('common.card.floor', { floor: trade.floor })}</li>
           <li>{t('common.card.buildYear', { year: complex.buildYear })}</li>

@@ -78,7 +78,7 @@ export function GameArena({
       {progressBar}
 
       <div ref={questionRef} className="mb-[var(--space-5)] text-center">
-        <h2 className="text-[20px] leading-[28px] font-bold text-text md:text-[28px] md:leading-[38px]">
+        <h2 className="type-h2-compact text-text">
           {t('s02.question.title')}
         </h2>
         {!revealed ? (
@@ -110,7 +110,7 @@ export function GameArena({
         />
         <span
           aria-hidden="true"
-          className="pointer-events-none absolute top-1/2 left-1/2 z-10 flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[var(--radius-full)] bg-secondary text-[13px] leading-[20px] font-extrabold text-white shadow-[var(--shadow-card)] md:h-11 md:w-11"
+          className="type-small pointer-events-none absolute top-1/2 left-1/2 z-10 flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[var(--radius-full)] bg-secondary font-extrabold text-white shadow-[var(--shadow-card)] md:h-11 md:w-11"
         >
           {t('s02.vs')}
         </span>

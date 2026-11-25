@@ -12,7 +12,7 @@ export function Header() {
           className="inline-flex items-center gap-2 rounded-[var(--radius-sm)] focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-[var(--color-focus)]"
         >
           <Img id="IMG-01" className="h-7 w-7 object-contain" priority />
-          <span className="text-[17px] leading-[24px] font-extrabold text-text">
+          <span className="type-h4 font-extrabold text-text">
             {t('common.brand.name')}
           </span>
         </Link>

@@ -64,25 +64,6 @@
   }
 }
 
-.tabular-nums { font-variant-numeric: tabular-nums; }
-.type-h1 { font-size: 30px; line-height: 40px; font-weight: 800; }
-.type-h2 { font-size: 24px; line-height: 32px; font-weight: 700; }
-.type-h3 { font-size: 18px; line-height: 26px; font-weight: 700; }
-.type-h4 { font-size: 15px; line-height: 22px; font-weight: 700; }
-.type-body { font-size: 16px; line-height: 26px; font-weight: 400; }
-.type-small { font-size: 13px; line-height: 20px; font-weight: 500; }
-.type-price { font-size: 19px; line-height: 26px; font-weight: 800; font-variant-numeric: tabular-nums; }
-.type-score { font-size: 40px; line-height: 48px; font-weight: 800; font-variant-numeric: tabular-nums; }
-
-@media (min-width: 768px) {
-  .type-h1 { font-size: 40px; line-height: 52px; }
-  .type-h2 { font-size: 28px; line-height: 38px; }
-  .type-h3 { font-size: 20px; line-height: 28px; }
-  .type-h4 { font-size: 17px; line-height: 24px; }
-  .type-price { font-size: 26px; line-height: 32px; }
-  .type-score { font-size: 48px; line-height: 56px; }
-}
-
 @layer components {
   .btn-primary, .btn-secondary {
     display: inline-flex;
@@ -147,17 +128,42 @@
     outline: 3px solid var(--color-focus);
     outline-offset: 2px;
   }
-}
 
-.prose-guide h2 { font-size: 24px; line-height: 32px; font-weight: 700; margin-top: var(--space-10); margin-bottom: var(--space-4); }
-.prose-guide h3 { font-size: 18px; line-height: 26px; font-weight: 700; margin-top: var(--space-8); margin-bottom: var(--space-3); }
-.prose-guide p { font-size: 16px; line-height: 26px; margin-bottom: var(--space-4); }
-.prose-guide ul, .prose-guide ol { margin-bottom: var(--space-4); padding-left: var(--space-6); }
-.prose-guide ul { list-style: disc; }
-.prose-guide ol { list-style: decimal; }
-.prose-guide li { font-size: 16px; line-height: 26px; margin-bottom: var(--space-2); }
-.prose-guide a { color: var(--color-primary); text-decoration: underline; }
-.prose-guide a:hover { color: var(--color-primary-hover); }
+  .tabular-nums { font-variant-numeric: tabular-nums; }
+  .type-h1 { font-size: 30px; line-height: 40px; font-weight: 800; }
+  .type-h2 { font-size: 24px; line-height: 32px; font-weight: 700; }
+  .type-h2-compact { font-size: 20px; line-height: 28px; font-weight: 700; }
+  .type-h3 { font-size: 18px; line-height: 26px; font-weight: 700; }
+  .type-h4 { font-size: 15px; line-height: 22px; font-weight: 700; }
+  .type-body { font-size: 16px; line-height: 26px; font-weight: 400; }
+  .type-card-info { font-size: 14px; line-height: 20px; font-weight: 400; }
+  .type-small { font-size: 13px; line-height: 20px; font-weight: 500; }
+  .type-price { font-size: 19px; line-height: 26px; font-weight: 800; font-variant-numeric: tabular-nums; }
+  .type-score { font-size: 40px; line-height: 48px; font-weight: 800; font-variant-numeric: tabular-nums; }
+
+  .prose-guide h2 { font-size: 24px; line-height: 32px; font-weight: 700; margin-top: var(--space-12); margin-bottom: var(--space-4); }
+  .prose-guide h3 { font-size: 18px; line-height: 26px; font-weight: 700; margin-top: var(--space-8); margin-bottom: var(--space-3); }
+  .prose-guide p { font-size: 16px; line-height: 26px; margin-bottom: var(--space-4); }
+  .prose-guide ul, .prose-guide ol { margin-bottom: var(--space-4); padding-left: var(--space-6); }
+  .prose-guide ul { list-style: disc; }
+  .prose-guide ol { list-style: decimal; }
+  .prose-guide li { font-size: 16px; line-height: 26px; margin-bottom: var(--space-2); }
+  .prose-guide a { color: var(--color-primary); text-decoration: underline; }
+  .prose-guide a:hover { color: var(--color-primary-hover); }
+
+  @media (min-width: 768px) {
+    .type-h1 { font-size: 40px; line-height: 52px; }
+    .type-h2 { font-size: 28px; line-height: 38px; }
+    .type-h2-compact { font-size: 28px; line-height: 38px; }
+    .type-h3 { font-size: 20px; line-height: 28px; }
+    .type-h4 { font-size: 17px; line-height: 24px; }
+    .type-card-info { font-size: 16px; line-height: 26px; }
+    .type-price { font-size: 26px; line-height: 32px; }
+    .type-score { font-size: 48px; line-height: 56px; }
+    .prose-guide h2 { font-size: 28px; line-height: 38px; }
+    .prose-guide h3 { font-size: 20px; line-height: 28px; }
+  }
+}
 
 @keyframes skeleton-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
 @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }

@@ -54,7 +54,7 @@ export function DataSource({ variant, generatedAt, linkable, from }: DataSourceP
             <Link
               href="/guide/data-source"
               onClick={onLinkClick}
-              className="btn-text !h-auto !px-0 !text-[13px] !leading-[20px] !font-medium"
+              className="btn-text type-small h-auto px-0"
             >
               {t('common.source.revealLink')}
             </Link>

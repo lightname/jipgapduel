@@ -78,7 +78,7 @@ export function ResultView({
           <>
             <h2 className="type-h2 mt-[var(--space-4)] text-text">{t('s05.infinite.title')}</h2>
             {isNewBest ? (
-              <span className="mt-[var(--space-3)] inline-block rounded-[var(--radius-sm)] bg-primary-soft px-[var(--space-2)] py-[var(--space-1)] text-[13px] leading-[20px] font-bold text-primary">
+              <span className="type-small mt-[var(--space-3)] inline-block rounded-[var(--radius-sm)] bg-primary-soft px-[var(--space-2)] py-[var(--space-1)] font-bold text-primary">
                 {t('s05.infinite.newBest')}
               </span>
             ) : null}
@@ -111,7 +111,7 @@ export function ResultView({
             </span>
           ))}
           {overflow > 0 ? (
-            <span className="flex h-7 w-7 items-center justify-center rounded-[var(--radius-sm)] bg-bg text-[13px] font-bold text-text-muted md:h-8 md:w-8">
+            <span className="type-small flex h-7 w-7 items-center justify-center rounded-[var(--radius-sm)] bg-bg font-bold text-text-muted md:h-8 md:w-8">
               +{overflow}
             </span>
           ) : null}

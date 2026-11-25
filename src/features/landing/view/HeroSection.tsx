@@ -21,7 +21,7 @@ export function HeroSection() {
 
   const badge =
     doneScore !== null ? (
-      <span className="inline-flex items-center rounded-[var(--radius-sm)] bg-success-soft px-[var(--space-2)] py-[var(--space-1)] text-[13px] leading-[20px] font-semibold text-success">
+      <span className="type-small inline-flex items-center rounded-[var(--radius-sm)] bg-success-soft px-[var(--space-2)] py-[var(--space-1)] font-semibold text-success">
         {t('s01.hero.doneBadge', { score: doneScore })}
       </span>
     ) : null;

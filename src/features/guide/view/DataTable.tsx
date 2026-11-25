@@ -92,7 +92,7 @@ export function DataTable({ name, stats }: DataTableProps) {
       <div className="overflow-x-auto rounded-[var(--radius-md)] border border-border bg-surface">
         <table className="w-full border-collapse text-left">
           <thead>
-            <tr className="bg-bg text-[13px] leading-[20px] font-bold text-text">
+            <tr className="type-small bg-bg font-bold text-text">
               {model.headers.map((head, idx) => (
                 <th
                   key={head}
