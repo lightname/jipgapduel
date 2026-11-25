@@ -1,0 +1,50 @@
+{
+  "name": "price-duel",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "prebuild": "tsx scripts/gen-ads-txt.ts",
+    "build": "next build && tsx scripts/check-secrets.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "qa:screens": "npm run build && playwright test tests/e2e/screens.spec.ts",
+    "preview": "wrangler pages dev out --port 8788",
+    "verify": "npm run typecheck && npm run lint && npm test && npm run build",
+    "update": "tsx scripts/data/run-update.ts",
+    "data:sample": "tsx scripts/data/run-update.ts --sample",
+    "gen:placeholders": "tsx scripts/gen-placeholders.ts",
+    "gen:og": "tsx scripts/gen-og.ts && tsx scripts/gen-icons.ts"
+  },
+  "dependencies": {
+    "fast-xml-parser": "5.12.1",
+    "marked": "18.2.1",
+    "next": "16.4.6",
+    "pretendard": "1.3.9",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1",
+    "@tailwindcss/postcss": "4.3.5",
+    "@testing-library/dom": "10.4.2",
+    "@testing-library/react": "16.3.3",
+    "@types/node": "22.20.7",
+    "@types/react": "19.3.0",
+    "@vitejs/plugin-react": "6.3.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.6",
+    "jsdom": "31.0.1",
+    "prettier": "3.10.1",
+    "tailwindcss": "4.3.5",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3",
+    "vitest": "5.1.1",
+    "wrangler": "4.166.0"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "common": {
+    "brand": {
+      "name": "집값대결"
+    },
+    "header": {
+      "homeAriaLabel": "집값대결 홈"
+    },
+    "footer": {
+      "home": "홈",
+      "daily": "오늘의 10문제",
+      "infinite": "무한 모드",
+      "guideDataSource": "데이터 출처와 제외 기준",
+      "guideMedianPrice": "조건별 중간 가격",
+      "privacy": "개인정보처리방침",
+      "copyright": "© 집값대결 · 기록은 이 브라우저에만 저장돼요"
+    },
+    "source": {
+      "footer": "출처 국토교통부 아파트 매매 실거래 자료 · 데이터 갱신 {date}",
+      "footerNoDate": "출처 국토교통부 아파트 매매 실거래 자료",
+      "reveal": "국토교통부 실거래 자료",
+      "revealLink": "데이터 기준 보기",
+      "guide": "국토교통부 아파트 매매 실거래 자료 · 갱신 {date}",
+      "guideNoDate": "국토교통부 아파트 매매 실거래 자료",
+      "landing": "실제 신고된 거래만 썼어요. 해제·직거래는 뺐어요",
+      "landingLink": "제외 기준 보기"
+    },
+    "ad": {
+      "label": "광고"
+    },
+    "error": {
+      "POOL_FETCH_FAILED": "문제를 불러오지 못했어요",
+      "POOL_SCHEMA_MISMATCH": "문제를 불러오지 못했어요",
+      "POOL_EMPTY": "문제를 불러오지 못했어요"
+    }
+  },
+  "og": {
+    "s01": {
+      "title": "둘 중 더 비싼 집은?",
+      "sub": "실제 거래된 아파트로 푸는 게임"
+    },
+    "s02": {
+      "title": "오늘의 10문제",
+      "sub": "모두가 같은 문제를 풀어요"
+    },
+    "s03": {
+      "title": "어느 아파트가 더 비쌀까?",
+      "sub": "틀릴 때까지 계속 풀어요"
+    },
+    "guide": {
+      "sub": "집값대결 가이드"
+    }
+  },
+  "s01": {
+    "hero": {
+      "title": "둘 중 더 비싼 집은?"
+    }
+  },
+  "s08": {
+    "title": "페이지를 찾을 수 없어요"
+  }
+}

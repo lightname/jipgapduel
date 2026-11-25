@@ -1,0 +1,114 @@
+[
+  {
+    "id": "IMG-01",
+    "file": "/images/logo-symbol.svg",
+    "width": 512,
+    "height": 512,
+    "alt": "",
+    "status": "placeholder"
+  },
+  {
+    "id": "IMG-02",
+    "file": "/images/favicon-symbol.svg",
+    "width": 64,
+    "height": 64,
+    "alt": "",
+    "status": "placeholder"
+  },
+  {
+    "id": "IMG-03",
+    "file": "/images/hero-duel.svg",
+    "width": 1120,
+    "height": 840,
+    "alt": "높이가 다른 아파트 두 동이 마주 보고 있는 그림",
+    "status": "placeholder"
+  },
+  {
+    "id": "IMG-04",
+    "file": "/images/og-base.svg",
+    "width": 1200,
+    "height": 630,
+    "alt": "",
+    "status": "placeholder"
+  },
+  {
+    "id": "IMG-05",
+    "file": "/images/step-pick.svg",
+    "width": 192,
+    "height": 192,
+    "alt": "",
+    "status": "placeholder"
+  },
+  {
+    "id": "IMG-06",
+    "file": "/images/step-reveal.svg",
+    "width": 192,
+    "height": 192,
+    "alt": "",
+    "status": "placeholder"
+  },
+  {
+    "id": "IMG-07",
+    "file": "/images/step-modes.svg",
+    "width": 192,
+    "height": 192,
+    "alt": "",
+    "status": "placeholder"
+  },
+  {
+    "id": "IMG-08",
+    "file": "/images/state-error.svg",
+    "width": 480,
+    "height": 360,
+    "alt": "",
+    "status": "placeholder"
+  },
+  {
+    "id": "IMG-09",
+    "file": "/images/verdict-correct.svg",
+    "width": 96,
+    "height": 96,
+    "alt": "",
+    "status": "placeholder"
+  },
+  {
+    "id": "IMG-10",
+    "file": "/images/verdict-wrong.svg",
+    "width": 96,
+    "height": 96,
+    "alt": "",
+    "status": "placeholder"
+  },
+  {
+    "id": "IMG-11",
+    "file": "/images/result.svg",
+    "width": 480,
+    "height": 320,
+    "alt": "",
+    "status": "placeholder"
+  },
+  {
+    "id": "IMG-12",
+    "file": "/images/guide-header.svg",
+    "width": 1440,
+    "height": 810,
+    "alt": "",
+    "status": "placeholder"
+  },
+  {
+    "id": "IMG-13",
+    "file": "/images/privacy.svg",
+    "width": 240,
+    "height": 180,
+    "alt": "",
+    "status": "placeholder"
+  },
+  {
+    "id": "IMG-14",
+    "file": "/images/not-found.svg",
+    "width": 640,
+    "height": 480,
+    "alt": "",
+    "status": "placeholder"
+  }
+]
