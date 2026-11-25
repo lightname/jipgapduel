@@ -24,3 +24,4 @@ export {
   type QuestionCardProps,
   type QuestionCardState,
 } from './view/QuestionCard';
+export { RevealPanel, type RevealPanelProps } from './view/RevealPanel';
