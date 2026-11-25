@@ -182,7 +182,10 @@
       "copied": "복사했어요",
       "imageError": "이미지를 만들지 못해 텍스트만 공유했어요",
       "textDaily": "집값대결 데일리 #{no}\n10문제 중 {score}개 · 최고 연속 {maxStreak}\n{grid}\n{url}",
-      "textInfinite": "집값대결 무한 모드\n연속 {streak}개 정답 · 최고 기록 {best}\n{grid}\n{url}"
+      "textInfinite": "집값대결 무한 모드\n연속 {streak}개 정답 · 최고 기록 {best}\n{grid}\n{url}",
+      "imageMetaDaily": "{dateDot} 데일리 #{no}",
+      "imageMetaInfinite": "{dateDot} 무한 모드",
+      "imageFooter": "집값대결 · {host}"
     },
     "cta": {
       "toInfinite": "무한 모드로 더 풀기",

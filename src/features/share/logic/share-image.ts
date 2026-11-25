@@ -1,3 +1,4 @@
+import { t } from '@/lib/i18n/t';
 import { getImage } from '@/lib/images';
 
 export type ShareImageInput = {
@@ -72,20 +73,29 @@ export async function renderShareImage(o: ShareImageInput): Promise<Blob | null>
 
   ctx.fillStyle = '#17181C';
   ctx.font = `800 56px ${fontFamily}`;
-  ctx.fillText('집값대결', 246, 196);
+  ctx.fillText(t('common.brand.name'), 246, 196);
 
   ctx.fillStyle = '#5B5F6A';
   ctx.font = `500 36px ${fontFamily}`;
-  const metaLine = o.mode === 'daily' ? `${o.dateDot} 데일리 #${o.no}` : `${o.dateDot} 무한 모드`;
+  const metaLine =
+    o.mode === 'daily'
+      ? t('s05.share.imageMetaDaily', { dateDot: o.dateDot, no: o.no })
+      : t('s05.share.imageMetaInfinite', { dateDot: o.dateDot });
   ctx.fillText(metaLine, 130, 300);
 
   ctx.fillStyle = '#17181C';
   ctx.font = `800 88px ${fontFamily}`;
-  const scoreLine = o.mode === 'daily' ? `10문제 중 ${o.score}개` : `연속 ${o.score}개 정답`;
+  const scoreLine =
+    o.mode === 'daily'
+      ? t('s05.daily.score', { score: o.score })
+      : t('s05.infinite.score', { score: o.score });
   ctx.fillText(scoreLine, 130, 420);
 
   ctx.font = `600 44px ${fontFamily}`;
-  const subLine = o.mode === 'daily' ? `최고 연속 ${o.maxStreak}개` : `최고 기록 ${o.best}개`;
+  const subLine =
+    o.mode === 'daily'
+      ? t('s05.daily.maxStreak', { maxStreak: o.maxStreak })
+      : t('s05.infinite.best', { best: o.best });
   ctx.fillText(subLine, 130, 500);
 
   const visible = o.answers.slice(0, 30);
@@ -115,7 +125,7 @@ export async function renderShareImage(o: ShareImageInput): Promise<Blob | null>
 
   ctx.fillStyle = '#5B5F6A';
   ctx.font = `500 32px ${fontFamily}`;
-  ctx.fillText(`집값대결 · ${o.host}`, 130, 950);
+  ctx.fillText(t('s05.share.imageFooter', { host: o.host }), 130, 950);
 
   return new Promise((resolve) => {
     canvas.toBlob((blob) => resolve(blob), 'image/png');
